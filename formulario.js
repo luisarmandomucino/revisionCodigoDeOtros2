@@ -1,12 +1,11 @@
-var formulario = document.forms["form"] //se puso el .forms y se elimino el #
+var formulario = document.forms["form"] //.forms
 
-formulario.addEventListener('submit', function(e) {   //se añadio el evento en el submit y se colocó la funcion 
-
+formulario.addEventListener('submit', function(e) {   //submit y función
   e.preventDefault();  //se coloco Default
   
-  var name = formulario.elements['name'] ; //name opara mejor comprension
-  var age = formulario.elements['age'];  //age para mejor compresion
-  var nationality = formulario.elements['nationality'];  //nationality para mejor compresion
+  var name = formulario.elements['name'] ; //name en lugar de .n
+  var age = formulario.elements['age'];  //lo mismo para age
+  var nationality = formulario.elements['nationality'];  //nationality 
 
   var nombre = name.value;  
   var edad = age.value;
